@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            color: blue;
+        }
+        #item1{
+            color: red;
+        }
+        [name="item2"]{
+            color: green;
+        }
+        .item3{
+            color: yellow;
+        }
+        .item4{
+            color: black;
+        }
+        #item4{
+            color: violet !important; /*임포턴트는 강제로 우선순위를 높여준다. 편리하긴 하지만 남발하면 유지보수에 문제가 생길 수 있다.*/
+        }
+    </style>
+</head>
+<body>
+    <body>
+        <ul>
+            <li id="item1">아이템1</li>
+            <li name="item2">아이템2</li>
+            <li class="item3">아이템3</li>
+            <li style="color: aqua;" class="item4" id="item4">아이템4</li> <!--일라이 스타일은 우선 순위가 매우 높다. -->
+            <li>아이템5</li>
+        </ul>
+    </body>
+</body>
+</html>

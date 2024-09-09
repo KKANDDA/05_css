@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+
+    div{
+        width: 300px;
+        height: 50px;
+    }
+    .border-test1{
+        border-style: none;
+        box-shadow: 5px 5px 3px 2px gray; /*5픽셀 밀고, 3픽셀 흐리게, 2픽셀*/
+    }
+
+    .border-test2{
+        border-style: dashed;
+        border-color: blue;
+        /* border : 3px dashed blue; */
+    }
+
+    .border-test3{
+        border: 3px solid black;
+        /* border-radius: 50px; */
+        border-top-left-radius: 50px;
+        border-top-right-radius: 25px;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 60px; /*임의로 깍을 수도 있다.*/
+    }
+
+    .border-test4{
+            border-style: solid;
+            box-shadow: 5px 5px 3px 2px gray;
+        }
+
+</style>
+<body>
+
+    <h1>테두리 스타일</h1>
+    <h3>border-style: none</h3>
+    <div class="border-test1"></div>
+
+    <h3>border-style : dashed & border-color:blue</h3>
+    <div class="border-test2"></div>
+
+    <h3>border-radius:50px</h3>
+    <div class="border-test3"></div>
+
+    <h3>border-style:solid & box-shadow:5px 5px 3px 2px gray</h3>
+    <div class="border-test4"></div>
+
+</body>
+</html>
